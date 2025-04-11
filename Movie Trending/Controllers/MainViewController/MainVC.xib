@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="Movie_Trending" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="RyL-c2-KAk" id="4Yl-B4-haO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,18 +19,18 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sandeepsahanicodes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Lb-Ku-UNz">
-                    <rect key="frame" x="115.66666666666669" y="415.66666666666669" width="162" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RyL-c2-KAk">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="2Lb-Ku-UNz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="57M-nB-qsO"/>
-                <constraint firstItem="2Lb-Ku-UNz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ODF-JV-Nd8"/>
+                <constraint firstAttribute="trailing" secondItem="RyL-c2-KAk" secondAttribute="trailing" id="2vf-tm-4GF"/>
+                <constraint firstItem="RyL-c2-KAk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VUG-ml-izw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RyL-c2-KAk" secondAttribute="bottom" id="hRo-pL-VpB"/>
+                <constraint firstItem="RyL-c2-KAk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="r82-oQ-9kk"/>
             </constraints>
             <point key="canvasLocation" x="140" y="20"/>
         </view>

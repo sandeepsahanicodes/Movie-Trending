@@ -8,13 +8,20 @@
 import UIKit
 
 class MainVC: UIViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var viewModel: MainViewModel = MainViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-        
+        configView()
+    }
+    
+    func configView() {
         self.title = "Main VC"
         self.view.backgroundColor = .red
+        
+        setUpTableView()
     }
 }
