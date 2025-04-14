@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		83A619652DAD8A7C00C8609F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 83A619642DAD8A7C00C8609F /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		83D0DCBF2DA7F1C8007488F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A619652DAD8A7C00C8609F /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = "Movie Trending";
 			packageProductDependencies = (
+				83A619642DAD8A7C00C8609F /* Kingfisher */,
 			);
 			productName = "Movie Trending";
 			productReference = 83D0DCA82DA7F1C4007488F0 /* Movie Trending.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = 83D0DC9F2DA7F1C4007488F0;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				83A619632DAD8A7C00C8609F /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 83D0DCA92DA7F1C4007488F0 /* Products */;
 			projectDirPath = "";
@@ -579,6 +588,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		83A619632DAD8A7C00C8609F /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		83A619642DAD8A7C00C8609F /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83A619632DAD8A7C00C8609F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83D0DCA02DA7F1C4007488F0 /* Project object */;
 }

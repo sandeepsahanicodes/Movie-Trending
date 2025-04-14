@@ -64,5 +64,3 @@ enum OriginalLanguage: String, Codable {
     case th = "th"
     case hi = "hi"
 }
-
-

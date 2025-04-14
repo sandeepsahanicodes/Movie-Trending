@@ -13,7 +13,7 @@ class MainVC: UIViewController {
     @IBOutlet weak var activatingIndicator: UIActivityIndicatorView!
     
     var viewModel: MainViewModel = MainViewModel()
-    var cellDataSource: [Movie] = []
+    var cellDataSource: [MovieTableCellViewModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,9 +27,7 @@ class MainVC: UIViewController {
     }
     
     func configView() {
-        self.title = "Main VC"
-        self.view.backgroundColor = .red
-        
+        self.title = "Trending Movies"
         setUpTableView()
     }
     
