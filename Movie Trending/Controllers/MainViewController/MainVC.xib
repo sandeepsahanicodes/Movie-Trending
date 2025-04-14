@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVC" customModule="Movie_Trending" customModuleProvider="target">
             <connections>
+                <outlet property="activatingIndicator" destination="0O3-m3-GvI" id="gsP-7v-uYW"/>
                 <outlet property="tableView" destination="RyL-c2-KAk" id="4Yl-B4-haO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,12 +24,18 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="0O3-m3-GvI">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" systemColor="systemGray2Color"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="RyL-c2-KAk" secondAttribute="trailing" id="2vf-tm-4GF"/>
+                <constraint firstItem="0O3-m3-GvI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Ry-Tk-rVT"/>
                 <constraint firstItem="RyL-c2-KAk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VUG-ml-izw"/>
+                <constraint firstItem="0O3-m3-GvI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="WIs-Rm-GFJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RyL-c2-KAk" secondAttribute="bottom" id="hRo-pL-VpB"/>
                 <constraint firstItem="RyL-c2-KAk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="r82-oQ-9kk"/>
             </constraints>
@@ -38,6 +45,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
