@@ -1,6 +1,12 @@
 # Movie-Trending
 A simple app for learning MVVM architecture in iOS Swift.
 
+# Screenshots
+
+<div style="float:left;margin:0 20px 20px 0" markdown="1">
+   <img width="200" alt="Main View Controller" src="https://github.com/user-attachments/assets/a1912c69-83df-4631-8286-d6c7c183e07a">
+   <img width="200" alt="Details View Controller" src="https://github.com/user-attachments/assets/aa6f07a9-9fa7-4ed0-a3f5-1526b8406972">
+</div>
 
 ## Error & bugs encountered while learning
 
