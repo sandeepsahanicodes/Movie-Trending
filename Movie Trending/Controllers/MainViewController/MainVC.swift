@@ -16,6 +16,7 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
+       
     }
     
     func configView() {
@@ -23,5 +24,9 @@ class MainVC: UIViewController {
         self.view.backgroundColor = .red
         
         setUpTableView()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        viewModel.getData()
     }
 }
